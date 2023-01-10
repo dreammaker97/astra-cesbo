@@ -1,0 +1,17 @@
+docker run -d --name systemd-ubuntu --tmpfs /tmp --tmpfs /run --tmpfs /run/lock -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6000:8000 -p 6080:6080 jrei/systemd-ubuntu
+
+apt update
+
+apt install -y curl
+
+curl -Lo /usr/bin/astra https://cesbo.com/astra-latest
+
+chmod +x /usr/bin/astra
+
+mkdir -p /etc/astra
+
+curl -o /etc/astra/license.txt https://cesbo.com/astra-license/
+
+astra init
+
+systemctl start astra
