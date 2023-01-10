@@ -1,4 +1,4 @@
-docker run -d --name systemd-ubuntu --tmpfs /tmp --tmpfs /run --tmpfs /run/lock -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8000:8000 -p 8001:8001/tcp -p 8001:8001/udp jrei/systemd-ubuntu
+docker run -d --name systemd-ubuntu --tmpfs /tmp --tmpfs /run --tmpfs /run/lock -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8000:8000/tcp -p 8000:8000/udp jrei/systemd-ubuntu
 
 docker exec -it systemd-ubuntu sh
 
