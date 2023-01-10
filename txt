@@ -1,5 +1,7 @@
 docker run -d --name systemd-ubuntu --tmpfs /tmp --tmpfs /run --tmpfs /run/lock -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 6000:8000 -p 6080:6080 jrei/systemd-ubuntu
 
+docker exec -it systemd-ubuntu sh
+
 apt update
 
 apt install -y curl
