@@ -19,3 +19,5 @@ curl -o /etc/astra/license.txt https://cesbo.com/astra-license/
 astra init
 
 systemctl start astra
+
+systemctl enable astra
