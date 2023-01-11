@@ -1,4 +1,4 @@
-(docker run --privileged --rm tonistiigi/binfmt --install all)
+docker run --privileged --rm tonistiigi/binfmt --install all
 
 docker run -d --name systemd-ubuntu --tmpfs /tmp --tmpfs /run --tmpfs /run/lock -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8000:8000 -p 8001:8001 jrei/systemd-ubuntu
 
