@@ -14,7 +14,7 @@ chmod +x /usr/bin/astra
 
 mkdir -p /etc/astra
 
-curl -o /etc/astra/license.txt https://cesbo.com/astra-license/
+curl -o /etc/astra/license.txt https://cesbo.com/astra-license/43cc16a193d796dc78af8d1799fec2fe
 
 astra init
 
